@@ -8,12 +8,12 @@
 public class Jugador
 {
     // instance variables - replace the example below with your own
-    private String id;
+    private int id;
 
     /**
      * Constructor for objects of class Jugador
      */
-    public Jugador(String id)
+    public Jugador(int id)
     {
         this.id = id;
     }
@@ -21,8 +21,24 @@ public class Jugador
     /**
      * Devuelve el identificador (id) del jugador
      */
-    private String getId()
+    private int getId()
     {
         return id;
+    }
+    
+    /**
+     * Recibe una carta.
+     */
+    private void recibirCarta()
+    {
+        
+    }
+    
+    /**
+     * 
+     */
+    private void cartasQueTieneEnLaMano()
+    {
+        
     }
 }
