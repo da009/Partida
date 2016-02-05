@@ -38,13 +38,18 @@ public class Juego
         }
     }
 
-    
     /**
      * Reparte las cartas.
      */
     public void repartir()
     {
-        
+        while (tomarPrimera() != null)
+        {
+            for(Jugador jugador : jugadores)
+            {
+                jugador.tomarPrimera();
+            }
+        }
     }
     
     /**
@@ -52,6 +57,9 @@ public class Juego
      */
     public void mostrarCartasJugadores()
     {
-        
+        for(Jugador jugador : jugadores)
+        {
+            System.out.println(jugador.getId() + "\n" + jugador.cartasQueTieneEnLaMano());
+        }
     }
 }
