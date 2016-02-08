@@ -44,7 +44,7 @@ public class Jugador
     {
         for (Carta carta : cartas)
         {
-            System.out.println(cartas.getPalo() + cartas.getNombre());
+            System.out.println(carta.getPalo() + cartas.getNombre());
         }
     }
 }

@@ -14,6 +14,8 @@ public class Juego
     private ArrayList<Jugador> jugadores;
     // Contador para los jugadores
     private int contNumeroJugadores;
+    // Objeto de la clase carta.
+    private Carta carta;
     
     /**
      * Constructor for objects of class Juego
@@ -43,11 +45,11 @@ public class Juego
      */
     public void repartir()
     {
-        while (tomarPrimera() != null)
+        while (carta.tomarPrimera() != null)
         {
             for(Jugador jugador : jugadores)
             {
-                jugador.tomarPrimera();
+                carta.tomarPrimera();
             }
         }
     }
