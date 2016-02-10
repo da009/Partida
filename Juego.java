@@ -16,6 +16,8 @@ public class Juego
     private int contNumeroJugadores;
     // Objeto de la clase carta.
     private Carta carta;
+    // Objeto de la clase Mazo.
+    private Mazo mazo;
     
     /**
      * Constructor for objects of class Juego
@@ -45,11 +47,11 @@ public class Juego
      */
     public void repartir()
     {
-        while (carta.tomarPrimera() != null)
+        while (mazo.quedan() >= jugadores.size())
         {
             for(Jugador jugador : jugadores)
             {
-                carta.tomarPrimera();
+                jugador.recibirCarta(carta.tomarPrimera());
             }
         }
     }
