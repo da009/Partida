@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Mazo()
+comment0.text=\r\n\ Constructor\ que\ crea\ la\ baraja\r\n
+comment1.params=
+comment1.target=void\ barajar()
+comment1.text=\r\n\ Metodo\ para\ barajar\ las\ cartas\r\n
+comment2.params=
+comment2.target=Carta\ tomarPrimera()
+comment2.text=\r\n\ Metodo\ que\ retorna\ la\ primera\ carta\ del\ mazo\ y\ modifica\ el\ estado\ del\ mazo\ para\ reflejar\ que\ esa\ carta\ ya\ no\ se\ encuentra\ en\ el\ mazo.\r\n\ En\ caso\ de\ que\ no\ queden\ cartas\ en\ el\ mazo\ devuelve\ null.\r\n
+comment3.params=
+comment3.target=int\ quedan()
+comment3.text=\r\n\ Metodo\ que\ retorna\ el\ numero\ de\ cartas\ que\ quedan\r\n
+comment4.params=
+comment4.target=void\ listarMazo()
+numComments=5
