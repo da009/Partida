@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Arrays;
 import java.util.Iterator;
+
 /**
  * Write a description of class Mazo here.
  * 
@@ -24,7 +25,6 @@ public class Mazo
         palos = new ArrayList<>(Arrays.asList("Tréboles","Corazones","Diamantes","Picas"));
         valores = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13));
         nombres = new ArrayList<>(Arrays.asList("As","Dos","Tres","Cuatro","Cinco","Seis","Siete","Ocho","Nueve","Diez","Jack","Queen","King"));
-
         for (String p : palos)
         {
             for (int v : valores)
@@ -36,7 +36,6 @@ public class Mazo
                 //System.out.println(v);
             }
         }
-
     }
 
     /**
@@ -70,8 +69,8 @@ public class Mazo
         return listaCartas.size();
     }
 
-    public void listarMazo() {
-
+    public void listarMazo()
+    {
         Iterator <Carta> it = listaCartas.iterator();
         Carta carta = null;   
         while (it.hasNext())

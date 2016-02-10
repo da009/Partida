@@ -6,9 +6,9 @@
  */
 public class Carta
 {
-    String nombre;
-    int valor;
-    String palo;
+    private String nombre;
+    private int valor;
+    private String palo;
 
     /**
      * Constructor for objects of class Cartas
@@ -17,7 +17,6 @@ public class Carta
     {
         this.valor = valor;
         this.palo = palo;
-        
     }
 
     /**
@@ -26,27 +25,29 @@ public class Carta
     public String getNombre()
     {
         String num =  valor + "";
-        
-       
         if (valor == 1)
         {
             num = "As";
         }
+        
         if (valor == 11)
         {
             num = "Jack";
         }
+        
         if (valor ==12)
         {
             num ="Queen";
         }
+        
         if (valor == 13)
         {
             num = "King";
         }
         String nombreCarta = num + " de " + palo;
-       return nombreCarta;
+        return nombreCarta;
     }
+    
     /**
      * Metodo que retorna el palo de la carta
      */
@@ -59,8 +60,4 @@ public class Carta
     {
         this.nombre = nombre;
     }
-    
-    
-   
-   
 }
