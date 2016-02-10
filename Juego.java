@@ -48,6 +48,7 @@ public class Juego
      */
     public void repartir()
     {
+        mazo.barajar();
         while (mazo.quedan() >= jugadores.size())
         {
             for(Jugador jugador : jugadores)
@@ -64,7 +65,7 @@ public class Juego
     {
         for(Jugador jugador : jugadores)
         {
-            System.out.println(jugador.getId() + "\n" + jugador.cartasQueTieneEnLaMano());
+            System.out.println(jugador.getId() + "\n" + jugador.cartasQueTieneEnLaMano() + "\n \n");
         }
     }
 }

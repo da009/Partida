@@ -12,7 +12,7 @@ public class Jugador
     private int id;
     // Arraylist para las cartas en mano.
     private ArrayList<Carta> cartas;
-
+    
     /**
      * Constructor for objects of class Jugador
      */
