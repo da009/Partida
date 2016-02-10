@@ -34,7 +34,7 @@ public class Jugador
      */
     public void recibirCarta(Carta unaCarta)
     {
-        cartas.add(unaCarta.getNombre());
+        cartas.add(unaCarta);
     }
     
     /**
@@ -42,9 +42,16 @@ public class Jugador
      */
     public void cartasQueTieneEnLaMano()
     {
-        for (Carta carta : cartas)
+        if (cartas.size() != 0)
         {
-            System.out.println(carta.getPalo() + cartas.getNombre());
+            for (Carta carta : cartas)
+            {
+                System.out.println(carta.getNombre());
+            }
+        }
+        else
+        {
+            System.out.println("El jugador no tiene cartas en la mano");
         }
     }
 }

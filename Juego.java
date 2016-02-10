@@ -53,7 +53,7 @@ public class Juego
         {
             for(Jugador jugador : jugadores)
             {
-                jugador.recibirCarta(carta.tomarPrimera());
+                jugador.recibirCarta(mazo.tomarPrimera());
             }
         }
     }
@@ -63,9 +63,10 @@ public class Juego
      */
     public void mostrarCartasJugadores()
     {
-        for(Jugador jugador : jugadores)
+        for (Jugador jugador : jugadores)
         {
-            System.out.println(jugador.getId() + "\n" + jugador.cartasQueTieneEnLaMano() + "\n \n");
+            System.out.println("El jugador con la Id " + jugador.getId() + " tiene en la mano las siguientes cartas: \n");
+            jugador.cartasQueTieneEnLaMano();
         }
     }
 }
