@@ -34,7 +34,7 @@ public class Jugador
      */
     public void recibirCarta(Carta unaCarta)
     {
-        cartas.add(unaCarta);
+        cartas.add(unaCarta.getNombre());
     }
     
     /**
