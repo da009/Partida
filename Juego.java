@@ -32,6 +32,7 @@ public class Juego
         if (numeroJugadores < 2 || numeroJugadores > 8)
         {
             numeroJugadores = 4;
+            System.out.println("El intervalo de número de jugadores introducido no es válido, se asignarán 4 jugadores por defecto");
         }
         
         // Añade jugadoreshasta que se alcance el número de jugadores de la partida.
