@@ -11,6 +11,4 @@ comment2.text=\r\n\ Metodo\ que\ retorna\ la\ primera\ carta\ del\ mazo\ y\ modi
 comment3.params=
 comment3.target=int\ quedan()
 comment3.text=\r\n\ Metodo\ que\ retorna\ el\ numero\ de\ cartas\ que\ quedan\r\n
-comment4.params=
-comment4.target=void\ listarMazo()
-numComments=5
+numComments=4

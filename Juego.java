@@ -27,6 +27,7 @@ public class Juego
         this.numeroJugadores = numeroJugadores;
         jugadores = new ArrayList<Jugador>();
         contNumeroJugadores = 1;
+        mazo = new Mazo();
         
         // Comprueba que los valores sean válidos y sino asigna 4 por defecto.
         if (numeroJugadores < 2 || numeroJugadores > 8)
@@ -38,7 +39,8 @@ public class Juego
         // Añade jugadoreshasta que se alcance el número de jugadores de la partida.
         while (contNumeroJugadores <= numeroJugadores)
         {
-            jugadores.add(new Jugador(contNumeroJugadores));
+            Jugador jugador = new Jugador(contNumeroJugadores);
+            jugadores.add(jugador);
             contNumeroJugadores++;
         }
     }

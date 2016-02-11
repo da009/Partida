@@ -19,6 +19,7 @@ public class Jugador
     public Jugador(int id)
     {
         this.id = id;
+        cartas = new ArrayList<Carta>();
     }
     
     /**

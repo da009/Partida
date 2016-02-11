@@ -68,17 +68,5 @@ public class Mazo
     {
         return listaCartas.size();
     }
-
-    public void listarMazo()
-    {
-        Iterator <Carta> it = listaCartas.iterator();
-        Carta carta = null;   
-        while (it.hasNext())
-        {
-            carta = it.next();
-            System.out.println(carta.getNombre() + " de " + carta.getPalo());
-
-        }
-    }
 }
 
